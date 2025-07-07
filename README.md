@@ -35,11 +35,15 @@ NEXTAUTH_SECRET=your_secret
 
 > **Note:** Check the codebase or ask the maintainer for the exact required variables.
 
-### 4. Set Up the Database
+### 4. Set Up the Database and add database connection details in config.json file
+Install Sequelize CLI: 
+```sh
+   npm install --save-dev sequelize-cli
+```
 Run migrations and seed initial data:
 ```sh
-npm run migrate     # or: node sync-db.js
-npm run seed        # or: node seeders/initial-data.js
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all   
 ```
 
 > **Note:** Ensure your database is running and accessible.
