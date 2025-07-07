@@ -27,12 +27,10 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env` file in the root directory. Add any required environment variables (e.g., database connection strings, authentication secrets). Example:
+Create a `.env` file in the root directory. Add the following required environment variable
 
 ```
-DATABASE_URL=your_database_url
 NEXTAUTH_SECRET=your_secret
-# Add other variables as needed
 ```
 
 > **Note:** Check the codebase or ask the maintainer for the exact required variables.
