@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "arnav@100904fsdi",
-    "database": "wifi-admin-dashboard",
-    "host": "localhost",
+    "username": "your-username",
+    "password": "your-password",
+    "database": "your-database-name",
+    "host": "your-host",
     "dialect": "mysql"
   },
   "test": {
