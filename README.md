@@ -38,7 +38,7 @@ NEXTAUTH_SECRET=your_secret
 ### 4. Set Up the Database and add database connection details in config.json file
 Install Sequelize CLI: 
 ```sh
-   npm install --save-dev sequelize-cli
+npm install --save-dev sequelize-cli
 ```
 Run migrations and seed initial data:
 ```sh
