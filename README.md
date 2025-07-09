@@ -33,8 +33,6 @@ Create a `.env` file in the root directory. Add the following required environme
 NEXTAUTH_SECRET=your_secret
 ```
 
-> **Note:** Check the codebase or ask the maintainer for the exact required variables.
-
 ### 4. Set Up the Database and add database connection details in config.json file
 Install Sequelize CLI: 
 ```sh
@@ -72,11 +70,6 @@ config/         # Configuration files
 - `npm run start` — Start production server
 - `npm run migrate` — Run database migrations
 - `npm run seed` — Seed the database
-
-## Troubleshooting
-- Double-check your `.env` variables if you get connection/auth errors.
-- Make sure your database server is running.
-- Delete `node_modules/` and run `npm install` if you have dependency issues.
 
 ## License
 MIT License
