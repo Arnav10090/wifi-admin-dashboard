@@ -17,7 +17,7 @@ A web-based dashboard for managing WiFi devices, user permissions, and network s
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git clone https://github.com/Arnav10090/wifi-admin-dashboard.git
 cd wifi-admin-dashboard
 ```
 
