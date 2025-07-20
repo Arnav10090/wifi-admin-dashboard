@@ -17,7 +17,7 @@ A web-based dashboard for managing WiFi devices, user permissions, and network s
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git clone https://github.com/Arnav10090/wifi-admin-dashboard.git
 cd wifi-admin-dashboard
 ```
 
@@ -27,21 +27,21 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env` file in the root directory. Add any required environment variables (e.g., database connection strings, authentication secrets). Example:
+Create a `.env` file in the root directory. Add the following required environment variable
 
 ```
-DATABASE_URL=your_database_url
 NEXTAUTH_SECRET=your_secret
-# Add other variables as needed
 ```
 
-> **Note:** Check the codebase or ask the maintainer for the exact required variables.
-
-### 4. Set Up the Database
+### 4. Set Up the Database and add database connection details in config.json file
+Install Sequelize CLI: 
+```sh
+npm install --save-dev sequelize-cli
+```
 Run migrations and seed initial data:
 ```sh
-npm run migrate     # or: node sync-db.js
-npm run seed        # or: node seeders/initial-data.js
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all   
 ```
 
 > **Note:** Ensure your database is running and accessible.
@@ -70,11 +70,6 @@ config/         # Configuration files
 - `npm run start` — Start production server
 - `npm run migrate` — Run database migrations
 - `npm run seed` — Seed the database
-
-## Troubleshooting
-- Double-check your `.env` variables if you get connection/auth errors.
-- Make sure your database server is running.
-- Delete `node_modules/` and run `npm install` if you have dependency issues.
 
 ## License
 MIT License
